@@ -1,0 +1,16 @@
+[project]
+name = "quant"
+version = "0.1.0"
+description = "Paper-trading crypto agent: deterministic state engine, pluggable decision engine, hard risk layer"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+exchange = ["ccxt>=4"]
+dev = ["pytest>=8"]
+
+[tool.setuptools]
+packages = ["quant", "quant.engines"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

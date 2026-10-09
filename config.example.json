@@ -1,0 +1,38 @@
+{
+  "symbol": "BTC/USDT",
+  "starting_equity": 10000.0,
+  "policy": {
+    "min_setup_quality": 2,
+    "min_confidence": 0.8,
+    "escalate_below_confidence": 0.6,
+    "kelly_fraction": 0.25,
+    "take_profit_bps": 150.0,
+    "stop_loss_bps": 100.0
+  },
+  "risk": {
+    "max_drawdown": 0.15,
+    "max_daily_loss": 0.04,
+    "max_position": 0.5,
+    "kill_switch_path": "KILL"
+  },
+  "rules": {
+    "warmup_bars": 50,
+    "crisis_rv_bps": 150.0,
+    "high_vol_rv_bps": 80.0,
+    "trend_threshold_bps": 30.0,
+    "mr_z_threshold": 2.0,
+    "toxic_spread_bps": 15.0,
+    "toxic_imbalance": 0.6,
+    "near_limit_drawdown": 0.08,
+    "reduce_drawdown": 0.12
+  },
+  "costs": {
+    "fee_bps": 10.0,
+    "slippage_bps": 5.0,
+    "default_half_spread_bps": 1.0
+  },
+  "agent": {
+    "max_hold_bars": 24,
+    "near_limit_at": 0.5
+  }
+}
